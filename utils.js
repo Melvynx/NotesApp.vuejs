@@ -1,3 +1,13 @@
+class NoteClass {
+  constructor(titre, note, color) {
+    this.id = String(findTheBiggestID());
+    this.titre = titre;
+    this.note = note;
+    this.color = color;
+    this.date = Date.now();
+    this.archived = false;
+  }
+}
 const msgSendNote = function () {
   infoAfterSend.styleObject.top = '10%';
   infoAfterSend.seen = true;
